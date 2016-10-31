@@ -19,7 +19,6 @@ FOREACH(year IN years |
       MERGE (m)-[:HAS_DAY]->(d))))
  
 WITH *
- 
 MATCH (year:Year)-[:HAS_MONTH]->(month)-[:HAS_DAY]->(day)
 WITH year,month,day
 ORDER BY year.year, month.month, day.day

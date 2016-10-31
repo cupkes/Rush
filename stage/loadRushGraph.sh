@@ -133,7 +133,7 @@ $CMD /opt/neo4j/stage/CQL/loadLabOrders.cql
 sleep 30 # waiting for indexes to build
 # LOADING Lab Collections
 echo "$MSG loadCollections.cql"
-$CMD /opt/neo4j/stage/CQL/loadCollections.cql
+$CMD /opt/neo4j/stage/CQL/loadLabCollections.cql
 sleep 30 # waiting for indexes to build
 # LOADING Lab Results
 echo "$MSG loadLabResults.cql"
