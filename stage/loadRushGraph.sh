@@ -254,13 +254,13 @@ echo "$MSG loadLabRequestLabRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadLabRequestLabRels.cql
 # LOADING Lab Request to Lab Orders
 echo "$MSG loadRequestOrderRels.cql"
-$CMD /opt/neo4j/stage/CQL/loadRequestOrderRels.cql
+$CMD /opt/neo4j/stage/CQL/loadLabRequestOrderRels.cql
 # LOADING Lab Request to Lab Collections
 echo "$MSG loadLabRequestCollectionRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadLabRequestCollectionRels.cql
 # LOADING Lab Request to Lab Results
 echo "$MSG loadRequestResultRels.cql"
-$CMD /opt/neo4j/stage/CQL/loadRequestResultRels.cql
+$CMD /opt/neo4j/stage/CQL/loadLabRequestResultRels.cql
 # LOADING Condition to Condition Onsets
 echo "$MSG loadConditionOnsetRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadConditionOnsetRels.cql
@@ -328,10 +328,10 @@ echo "$MSG loadRXOrderDayRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadRXOrderDayRels.cql
 # LOADING Encounter Start to Day Relationships
 echo "$MSG loadEncounterStartDayRels.cql"
-$CMD /opt/neo4j/stage/CQL/loadEncounterStartDayRels.cql
+$CMD /opt/neo4j/stage/CQL/loadEncounterStartsDayRels.cql
 # LOADING Encounter End to Day Relationships
 echo "$MSG loadEncounterEndDayRels.cql"
-$CMD /opt/neo4j/stage/CQL/loadEncounterEndDayRels.cql
+$CMD /opt/neo4j/stage/CQL/loadEncounterEndsDayRels.cql
 # LOADING Lab Order to Day Relationships
 echo "$MSG loadLabOrderDayRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadLabOrderDayRels.cql
