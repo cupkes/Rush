@@ -323,7 +323,10 @@ $CMD /opt/neo4j/stage/CQL/loadConditionOnsetDayRels.cql
 # LOADING Condition Resolution to Day Relationships
 echo "$MSG loadConditionResolutionDayRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadConditionResolutionDayRels.cql
-# LOADING RXOrder to Day Relationships
+# LOADING Diagnosis to Day Relationships
+echo "$MSG loadDiagnosisDayRels.cql"
+$CMD /opt/neo4j/stage/CQL/loadDiagnosisDayRels.cql
+# LOADING Encounter Start to Day Relationships
 echo "$MSG loadRXOrderDayRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadRXOrderDayRels.cql
 # LOADING Encounter Start to Day Relationships
@@ -341,15 +344,9 @@ $CMD /opt/neo4j/stage/CQL/loadLabCollectionDayRels.cql
 # LOADING Lab Result to Day Relationships
 echo "$MSG loadLabResultDayRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadLabResultDayRels.cql
-# LOADING Lab Collection to Day Relationships
-echo "$MSG loadLabCollectionDayRels.cql"
-$CMD /opt/neo4j/stage/CQL/loadLabCollectionDayRels.cql
-# LOADING Lab Result to Day Relationships
-echo "$MSG loadLabResultDayRels.cql"
-$CMD /opt/neo4j/stage/CQL/loadLabResultDayRels.cql
 # LOADING Lab Vital Observation to Day Relationships
-echo "$MSG loadLabCollectionDayRels.cql"
-$CMD /opt/neo4j/stage/CQL/loadLabCollectionDayRels.cql
+echo "$MSG loadVitalObservationDayRels.cql"
+$CMD /opt/neo4j/stage/CQL/loadVitalObservationDayRels.cql
 # LOADING Lab Death to Day Relationships
 echo "$MSG loadDeathDayRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadDeathDayRels.cql
