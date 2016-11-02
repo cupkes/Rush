@@ -17,3 +17,4 @@ MATCH (d:Diagnosis) set d:Event;
 MATCH (p:Procedure) set p:Event;
 MATCH (r:RXOrder) set r:Event;
 MATCH (v:VitalObservation) set v:Event;
+CREATE INDEX ON :Event(ID);

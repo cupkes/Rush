@@ -163,6 +163,7 @@ sleep 30 # waiting for indexes to build
 # LOADING Event Label Hierarchy
 echo "$MSG loadEventLabelHierarchy.cql"
 $CMD /opt/neo4j/stage/CQL/loadEventLabelHierarchy.cql
+sleep 10 # waiting for indexes to build
 #---------------------------------------------------------
 # Next we load the relationships
 # 1.  Patient encountered an Encounter
@@ -291,7 +292,7 @@ $CMD /opt/neo4j/stage/CQL/loadIndicatorEventLabels.cql
 # LOADING Next Event Relationships
 echo "$MSG loadNextEventRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadNextEventRels.cql
-
+# ----------------START TIME TREE RELATIONSHIP CREATION---
 #---------------------------------------------------------
 # Finally we link our timed chain of events to our time tree
 #
@@ -350,3 +351,4 @@ $CMD /opt/neo4j/stage/CQL/loadVitalObservationDayRels.cql
 # LOADING Lab Death to Day Relationships
 echo "$MSG loadDeathDayRels.cql"
 $CMD /opt/neo4j/stage/CQL/loadDeathDayRels.cql
+#-----------------END TIME TREE RELATIONSHIP CREATION---
